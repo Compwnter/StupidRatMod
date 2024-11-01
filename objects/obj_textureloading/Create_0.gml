@@ -2,7 +2,7 @@ scr_get_languages();
 
 // texture pages
 tex_list = -4;
-var group_arr = ["hubgroup", "playergroup", "noisegroup", "introgroup", "smallgroup", "hudgroup"];
+var group_arr = ["hubgroup", "playergroup", "noisegroup", "introgroup", "smallgroup", "hudgroup", "playerRgroup"];
 tex_list = array_create(0);
 tex_pos = 0;
 for (var i = 0; i < array_length(group_arr); i++)

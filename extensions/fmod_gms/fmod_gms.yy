@@ -13,12 +13,12 @@
   "author": "",
   "classname": "",
   "copyToTargets": -1,
-  "date": "2023-01-27T15:18:12.3699006+01:00",
+  "date": "2023-01-27T14:18:12.3699006+00:00",
   "description": "",
   "exportToGame": true,
   "extensionVersion": "0.0.1",
   "files": [
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","constants":[],"copyToTargets":3026418971067809998,"filename":"fmod-gamemaker.dll","final":"","functions":[
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"fmod-gamemaker.dll","constants":[],"copyToTargets":3026418971067809998,"filename":"fmod-gamemaker.dll","final":"","functions":[
         {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"fmod_init","argCount":1,"args":[
             2,
           ],"documentation":"","externalName":"FMOD_Init","help":"","hidden":false,"kind":1,"returnType":2,},
@@ -114,6 +114,8 @@
   "gradleinject": "",
   "hasConvertedCodeInjection": true,
   "helpfile": "",
+  "HTML5CodeInjection": "",
+  "html5Props": false,
   "IncludedResources": [],
   "installdir": "",
   "iosCocoaPodDependencies": "",

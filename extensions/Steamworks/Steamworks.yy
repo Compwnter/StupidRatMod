@@ -19,7 +19,7 @@
   "exportToGame": true,
   "extensionVersion": "1.5.1",
   "files": [
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","constants":[
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"Steamworks.dll","constants":[
         {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"ov_friends","hidden":false,"value":"0",},
         {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"ov_community","hidden":false,"value":"1",},
         {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"ov_players","hidden":false,"value":"2",},
@@ -1154,11 +1154,13 @@
         {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"Steamworks.so","TargetMask":7,},
         {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"Steamworks_x64.dll","TargetMask":6,},
       ],"uncompress":false,"usesRunnerInterface":true,},
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","constants":[],"copyToTargets":2,"filename":"libsteam_api.dylib","final":"","functions":[],"init":"","kind":4,"order":[],"origname":"","ProxyFiles":[],"uncompress":false,"usesRunnerInterface":false,},
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"libsteam_api.dylib","constants":[],"copyToTargets":2,"filename":"libsteam_api.dylib","final":"","functions":[],"init":"","kind":4,"order":[],"origname":"","ProxyFiles":[],"uncompress":false,"usesRunnerInterface":false,},
   ],
   "gradleinject": "",
   "hasConvertedCodeInjection": true,
   "helpfile": "",
+  "HTML5CodeInjection": "",
+  "html5Props": false,
   "IncludedResources": [],
   "installdir": "",
   "iosCocoaPodDependencies": "",
@@ -1175,9 +1177,9 @@
   "macsourcedir": "",
   "options": [
     {"resourceType":"GMExtensionOption","resourceVersion":"1.0","name":"__label1","defaultValue":"BUILD OPTIONS:","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"fc7d5b5e-1344-49ee-bca6-8579b0c68d50","hidden":false,"listItems":[],"optType":5,},
-    {"resourceType":"GMExtensionOption","resourceVersion":"1.0","name":"sdkPath","defaultValue":"","description":"The path to the steam sdk (v1.55)","displayName":"Steam SDK","exportToINI":false,"extensionId":null,"guid":"2d6a1c61-98e7-4289-8eff-d70ef6dac1ff","hidden":false,"listItems":[],"optType":4,},
+    {"resourceType":"GMExtensionOption","resourceVersion":"1.0","name":"sdkPath","defaultValue":"C:\\steamworks\\sdk","description":"The path to the steam sdk (v1.55)","displayName":"Steam SDK","exportToINI":false,"extensionId":null,"guid":"2d6a1c61-98e7-4289-8eff-d70ef6dac1ff","hidden":false,"listItems":[],"optType":4,},
     {"resourceType":"GMExtensionOption","resourceVersion":"1.0","name":"__label2","defaultValue":"APP OPTIONS:","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"c37a2e1d-c82f-4d90-9d0a-b4a2b3b3da08","hidden":false,"listItems":[],"optType":5,},
-    {"resourceType":"GMExtensionOption","resourceVersion":"1.0","name":"appID","defaultValue":"480","description":"Get this value from your steam dashboard.","displayName":"Application ID","exportToINI":false,"extensionId":null,"guid":"2d512363-a8c0-4025-8b9f-b53e231b025d","hidden":false,"listItems":[],"optType":1,},
+    {"resourceType":"GMExtensionOption","resourceVersion":"1.0","name":"appID","defaultValue":"2231450","description":"Get this value from your steam dashboard.","displayName":"Application ID","exportToINI":false,"extensionId":null,"guid":"2d512363-a8c0-4025-8b9f-b53e231b025d","hidden":false,"listItems":[],"optType":1,},
     {"resourceType":"GMExtensionOption","resourceVersion":"1.0","name":"debug","defaultValue":"Auto","description":"Auto - automatically sets debug to false on export;\nEnabled - will always keep debug mode on (USE AT OWN RISK);","displayName":"Debug","exportToINI":true,"extensionId":null,"guid":"96a61e5d-c4ac-4104-b5ac-c8ef936e2609","hidden":false,"listItems":[
         "Auto",
         "Enabled",

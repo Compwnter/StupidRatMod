@@ -45,6 +45,10 @@ noise_game = -4;
 noise_percvisual = 0;
 noise_alpha = 0;
 noise_unlocked = false;
+rat_game = -4;
+rat_percvisual = 0;
+rat_alpha = 0;
+rat_unlocked = false;
 pep_debris = false;
 swap_unlocked = false;
 game_icon_y = 0;
@@ -56,7 +60,7 @@ unlock_noise = function(show_screen)
 {
 	for (var i = 0; i < 3; i++)
 	{
-		if (global.game[i].judgement != "none" || global.gameN[i].judgement != "none")
+		if (global.game[i].judgement != "none" || global.gameN[i].judgement != "none" || global.gameR[i].judgement != "none")
 		{
 			show_screen = true;
 			break;
@@ -110,6 +114,39 @@ unlock_swap = function(show_screen)
 			with (instance_create(0, 0, obj_noiseunlocked))
 				sprite_index = spr_swapmodeunlocked;
 			ini_write_real("Game", "swapunlocked", 1);
+			obj_savesystem.ini_str_options = ini_close();
+			gamesave_async_save_options();
+		}
+		else
+			ini_close();
+	}
+};
+unlock_rat = function(show_screen)
+{
+	for (var i = 0; i < 3; i++)
+	{
+		if (global.game[i].judgement != "none" || global.gameN[i].judgement != "none" || global.gameR[i].judgement != "none")
+		{
+			show_screen = true;
+			break;
+		}
+	}
+	if !show_screen
+	{
+		ini_open_from_string(obj_savesystem.ini_str_options);
+		show_screen = ini_read_real("Game", "beaten", 0) > 0;
+		if !show_screen
+			show_screen = ini_read_real("Game", "ratunlocked", 0);
+		ini_close();
+	}
+	if show_screen
+	{
+		rat_unlocked = true;
+		ini_open_from_string(obj_savesystem.ini_str_options);
+		if (ini_read_real("Game", "ratunlocked", 0) == 0)
+		{
+			instance_create(0, 0, obj_noiseunlocked);
+			ini_write_real("Game", "ratunlocked", 1);
 			obj_savesystem.ini_str_options = ini_close();
 			gamesave_async_save_options();
 		}
